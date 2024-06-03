@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    background-color: #121212;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Portfolio Section Styles */
+.portfolio-section {
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(0,0,255,0.7));
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 30vw;
+    column-gap: 18vw;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.profile-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    border: 5px solid #00f;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+.text-section {
+    flex: 2;
+    padding-right: 20px;
+
+}
+.text-section span{
+   font-style:inherit; 
+   color: chocolate;
+}
+.text-section h1, .text-section h2, .text-section h3 {
+    margin: 22px 0;
+
+}
+
+.text-section h2 {
+    font-size: 2.5em;
+    color: #00f;
+}
+
+.typing-animation {
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 4s steps(15) infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 80%; }
+}
+
+.text-section p {
+    margin: 20px 0;
+    max-width: 600px;
+}
+.text-section i:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.more-about-me {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #00f;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.more-about-me:hover {
+    background-color: #005f;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00f;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005f;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .portfolio-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-section {
+        padding-right: 0;
+    }
+
+    .profile-picture {
+        margin-top: 20px;
+    }
+}

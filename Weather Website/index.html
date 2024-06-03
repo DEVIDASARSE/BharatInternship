@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-switch-container">
+        <button id="themeSwitch" onclick="toggleTheme()">Switch Theme</button>
+    </div>
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherContainer" class="hidden">
+            <h2 id="cityName" class="fade-in"></h2>
+            <p id="description" class="fade-in"></p>
+            <p id="temperature" class="fade-in"></p>
+            <img id="weatherIcon" class="fade-in" src="" alt="Weather Icon">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
